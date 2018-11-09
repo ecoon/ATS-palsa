@@ -420,14 +420,7 @@
       </ParameterList>
 
       <ParameterList name="initial condition" type="ParameterList">
-        <Parameter name="initialize faces from cells" type="bool" value="true" />
-        <ParameterList name="initialize from 1D column" type="ParameterList">
-          <Parameter name="file" type="string" value="../column_data_thaw.h5" />
-          <Parameter name="z header" type="string" value="/z" />
-          <Parameter name="f header" type="string" value="/pressure" />
-          <Parameter name="coordinate orientation" type="string" value="depth" />
-          <Parameter name="surface sideset" type="string" value="surface" />
-        </ParameterList>
+        <Parameter name="restart file" type="string" value="../../step1/run0/checkpoint00001.h5" />
       </ParameterList>
 
       <ParameterList name="water retention evaluator" type="ParameterList">
